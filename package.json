@@ -1,0 +1,34 @@
+{
+	"name": "vscode-foxlang",
+	"displayName": "vscode-foxlang",
+	"description": "Language support for the Fox Language",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.68.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "fox",
+				"aliases": [
+					"Fox",
+					"fox"
+				],
+				"extensions": [
+					".fox"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "fox",
+				"scopeName": "source.fox",
+				"path": "./syntaxes/fox.tmLanguage.json"
+			}
+		]
+	}
+}
